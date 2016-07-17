@@ -10,7 +10,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-#import "SCSiriWaveformView.h"
+#import <WaveformView/WaveformView.h>
 
 typedef NS_ENUM(NSUInteger, SCSiriWaveformViewInputType) {
 	SCSiriWaveformViewInputTypeRecorder,
