@@ -20,8 +20,8 @@
 		9669DBE01D3BFAFC0068A885 /* WaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9669DBDE1D3BFAFC0068A885 /* WaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9669DBE31D3BFAFC0068A885 /* WaveformView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9669DBDC1D3BFAFC0068A885 /* WaveformView.framework */; };
 		9669DBE41D3BFAFC0068A885 /* WaveformView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9669DBDC1D3BFAFC0068A885 /* WaveformView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9669DBE91D3BFB090068A885 /* SCSiriWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F7BF918FAF77500CCC606 /* SCSiriWaveformView.m */; };
-		9669DBEB1D3BFB6B0068A885 /* SCSiriWaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 186F7BF818FAF77500CCC606 /* SCSiriWaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9669DBE91D3BFB090068A885 /* WaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F7BF918FAF77500CCC606 /* WaveformView.m */; };
+		9669DBEB1D3BFB6B0068A885 /* WaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 186F7BF818FAF77500CCC606 /* WaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,8 @@
 		186F7B8D18FAEC1100CCC606 /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
 		186F7BAF18FAEC6A00CCC606 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		186F7BF518FAF5B500CCC606 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
-		186F7BF818FAF77500CCC606 /* SCSiriWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSiriWaveformView.h; path = ../../SCSiriWaveformView/SCSiriWaveformView.h; sourceTree = "<group>"; };
-		186F7BF918FAF77500CCC606 /* SCSiriWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSiriWaveformView.m; path = ../../SCSiriWaveformView/SCSiriWaveformView.m; sourceTree = "<group>"; };
+		186F7BF818FAF77500CCC606 /* WaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaveformView.h; path = ../../SCSiriWaveformView/WaveformView.h; sourceTree = "<group>"; };
+		186F7BF918FAF77500CCC606 /* WaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaveformView.m; path = ../../SCSiriWaveformView/WaveformView.m; sourceTree = "<group>"; };
 		18EF32401B2479B600204641 /* sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.m4a; sourceTree = "<group>"; };
 		9669DBDC1D3BFAFC0068A885 /* WaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9669DBDE1D3BFAFC0068A885 /* WaveformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveformView.h; sourceTree = "<group>"; };
@@ -160,8 +160,8 @@
 		9669DBDD1D3BFAFC0068A885 /* WaveformView */ = {
 			isa = PBXGroup;
 			children = (
-				186F7BF818FAF77500CCC606 /* SCSiriWaveformView.h */,
-				186F7BF918FAF77500CCC606 /* SCSiriWaveformView.m */,
+				186F7BF818FAF77500CCC606 /* WaveformView.h */,
+				186F7BF918FAF77500CCC606 /* WaveformView.m */,
 				9669DBDE1D3BFAFC0068A885 /* WaveformView.h */,
 				9669DBDF1D3BFAFC0068A885 /* Info.plist */,
 			);
@@ -176,7 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9669DBE01D3BFAFC0068A885 /* WaveformView.h in Headers */,
-				9669DBEB1D3BFB6B0068A885 /* SCSiriWaveformView.h in Headers */,
+				9669DBEB1D3BFB6B0068A885 /* WaveformView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9669DBE91D3BFB090068A885 /* SCSiriWaveformView.m in Sources */,
+				9669DBE91D3BFB090068A885 /* WaveformView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +524,7 @@
 				9669DBE71D3BFAFC0068A885 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

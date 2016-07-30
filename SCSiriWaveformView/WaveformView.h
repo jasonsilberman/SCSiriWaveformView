@@ -9,7 +9,7 @@
 @import UIKit;
 
 IB_DESIGNABLE
-@interface SCSiriWaveformView : UIView
+@interface WaveformView : UIView
 
 /*
  * Tells the waveform to redraw itself using the given level (normalized value)

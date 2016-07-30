@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Stefan Ceriu. All rights reserved.
 //
 
-#import "SCSiriWaveformView.h"
+#import "WaveformView.h"
 
 static const CGFloat kDefaultFrequency          = 1.5f;
 static const CGFloat kDefaultAmplitude          = 1.0f;
@@ -17,14 +17,14 @@ static const CGFloat kDefaultDensity            = 5.0f;
 static const CGFloat kDefaultPrimaryLineWidth   = 3.0f;
 static const CGFloat kDefaultSecondaryLineWidth = 1.0f;
 
-@interface SCSiriWaveformView ()
+@interface WaveformView ()
 
 @property (nonatomic, assign) CGFloat phase;
 @property (nonatomic, assign) CGFloat amplitude;
 
 @end
 
-@implementation SCSiriWaveformView
+@implementation WaveformView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
